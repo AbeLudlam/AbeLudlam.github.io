@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    
+    <!--
+    CPSC 362 Software Engineering
+    Developers: Arun Sangar, Abraham Ludlam, Josh Marvel, TeviSophea Heng, Tony Dao
+    Project Manager / Developer: Phillip Ly
+    -->
+        <title>Daisu</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">    
+        <link rel="stylesheet" type="text/css" href="css/style.css">  
+    </head>
+
+    <body>
+        <!-- Following menu-->
+        <div class="ui segment" id="master-menu"></div>
+
+        <!-- Page Contents-->
+        <div class="ui segment" id="cart-segment">
+            <div class="ui grid">
+                <div class="twelve wide column">
+                    <h2 class="ui header">Shopping Cart</h2>
+                    <div class="ui segment" id="shoppingCartList">
+                        <h3 class="ui header" data-bind="visible: cartItemNumber() <= 0">Your Shopping Cart is empty.</h3>
+                        <div class="ui divided items" data-bind="foreach: {data: cartItems, as: 'item'}">
+                            <div class="item">
+                                <a class="ui small image" data-bind="attr: {'href': $parent.linkQuery(item.itemId)}">
+                                    <img src="http://semantic-ui.com/images/wireframe/image.png" data-bind="attr: {src: item.url}">
+                                </a>
+                                <div class="content">
+                                    <div class="ui grid">
+                                        <div class="ten wide column">
+                                            <h3 class="header">
+                                                <a href="#" class="header" data-bind="text: item.title, attr: {'href': $parent.linkQuery(item.itemId)}"></a>
+                                            </h3>
+                                            <button class="ui inverted red button" data-bind="click: $parent.deleteCartItem">Delete</button>
+                                            <button class="ui inverted blue button" data-bind="visible: $root.userLogin, click: $parent.saveForLater">Save for later</button>
+                                        </div>
+                                        <div class="three wide column">
+                                            <h3 class="price">
+                                                $<span data-bind="text: $data.price">$0</span>
+                                            </h3>
+                                        </div>
+                                        <div class="three wide column">
+                                            Quantity
+                                            <div class="ui fluid selection dropdown" id="quantityChange" data-bind="click: $parent.changeQty">
+                                                <i class="dropdown icon"></i>
+                                                <div class="text" data-id data-bind="text: $data.quantity, attr: {'data-id': $data.itemId}">1</div>
+                                                <div class="menu" data-bind="foreach: new Array(10)">
+                                                    <div class="item" data-id="1" data-bind="text: $index()+1, attr: {'data-id': item.itemId}">1</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div data-bind="visible: userLogin">
+                        <h2 class="ui header">
+                            Saved for later (<span data-bind="text: saveItemNumber">0</span> item<span data-bind="visible: saveItemNumber() > 1">s</span>)
+                        </h2>
+                        <div class="ui segment" id="savedLaterList">
+                            <h3 class="ui header" data-bind="visible: saveItemNumber() <= 0">No items saved for later.</h3>
+                            <div class="ui divided items" data-bind="foreach: {data: saveItems, as: 'item'}">
+                                <div class="item">
+                                    <a class="ui small image" data-bind="attr: {'href': $parent.linkQuery(item.itemId)}">
+                                        <img src="http://semantic-ui.com/images/wireframe/image.png" data-bind="attr: {src: item.url}">
+                                    </a>
+                                    <div class="content">
+                                        <div class="ui grid">
+                                            <div class="thirteen wide column">
+                                                <h3 class="header">
+                                                    <a href="#" class="header" data-bind="text: item.title, attr: {'href': $parent.linkQuery(item.itemId)}"></a>
+                                                </h3>
+                                                <button class="ui inverted red button" data-bind="click: $parent.deleteSaveLater">Delete</button>
+                                                <button class="ui inverted blue button" data-bind="click: $parent.moveToCart">Move to Cart</button>
+                                            </div>
+                                            <div class="three wide column">
+                                                <h3 class="price">
+                                                    $<span data-bind="text: $data.price">$0</span>
+                                                </h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="four wide column">
+                    <div class="ui sticky" data-bind="visible: cartItemNumber() > 0">
+                        <div class="ui segment check-out-form">
+                            <h3 class="ui header subtotal-title">
+                                Cart Summary
+                            </h3>
+                            <div class="ui divider"></div>
+                            <h3 class="ui header subtotal">Subtotal(
+                                <span id="subtotal-items" data-bind="text: cartItemNumber">0</span>
+                                item<span data-bind="visible: cartItemNumber() > 1">s</span>):
+                                <span id="subtotal-price" class="price" data-bind="text: computeTotal"></span>
+                            </h3>
+                            <a class="ui fluid button" id="checkOutButton">Proceed to Checkout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- footer -->
+        <footer>
+            <div class="ui inverted vertical footer segment">
+                <div class="ui container">
+                    <div class="ui stackable inverted divided equal height stackable grid">
+                        <div class="three wide column">
+                            <h4 class="ui inverted hedaer">Products</h4>
+                            <div class="ui inverted link list">
+                                <a href="#" class="item">Gear</a>
+                                <a href="#" class="item">Clothing</a>
+                                <a href="#" class="item">Footwear</a>
+                                <a href="#" class="item">Packs</a>
+                            </div>
+                        </div>
+                        <div class="three wide column">
+                            <h4 class="ui inverted hedaer">Hiking Trail</h4>
+                            <div class="ui inverted link list">
+                                <a href="#" class="item">Mountaineering</a>
+                                <a href="#" class="item">Climbing</a>
+                                <a href="#" class="item">Hiking</a>
+                                <a href="#" class="item">Camping</a>
+                            </div>
+                        </div>
+                        <div class="three wide column">
+                            <h4 class="ui inverted hedaer">About</h4>
+                            <div class="ui inverted link list">
+                                <a href="#" class="item">About Us</a>
+                                <a href="#" class="item">Contact Us</a>
+                                <a href="#" class="item">FAQ</a>
+                            </div>
+                        </div>
+                        <div class="seven wide column">
+                            <img src="image/DAISU_ICON.png" class="footer-logo-image" alt="logo image">
+                            <h4>Explore more journey with Daisu hiking gear</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </footer>
+        <script type='text/javascript' src='javascript/knockout-3.4.1.js'></script>
+
+        <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="semantic/dist/semantic.min.js"></script> 
+        <script src="javascript/menu.js"></script>
+        <script src="javascript/shoppingCart.js"></script>
+    
+    </body>
+</html>

@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Daisu</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">    
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+
+    <body>
+        <!-- Following menu-->
+        <div class="ui segment" id="master-menu"></div>
+
+        <!-- Page Contents-->
+        <div class="ui center aligned grid signup">
+            <div class="column">
+                <div class="ui success message" style="display: none">
+                    <div class="header">Your registration was successful.</div>
+                    <p class="ui center aligned grid">You may now log-in with the username you have chosen</p>
+                </div>
+                <div class="ui negative message" style="display: none">
+                    <div class="header">Your Username already been used.</div>
+                    <p class="ui center aligned grid">Please choose different username</p>
+                </div>
+                <form class="ui form" method="post">
+                    <div class="ui stacked segment">
+                        <div class="ui grid">
+                            <div class="ten wide column">
+                                <h3>Sign Up Now</h3>
+                                <p>Fill in the form below to get a new account</p>
+                            </div>
+                            <div class="six wide column">
+                                <i class="huge write icon"></i>
+                            </div> 
+                        </div>
+                        <div class="ui divider"></div>
+                        <div class="field">
+                            <label>Name</label>
+                            <div class="three fields">
+                                <div class="field">
+                                    <input type="text" name="firstName" id="firstName" placeholder="First Name">
+                                </div>
+                                <div class="field">
+                                    <input type="text" name="middleName" id="middleName" placeholder="Middle Name">
+                                </div>
+                                <div class="field">
+                                    <input type="text" name="lastName" id="lastName" placeholder="Last Name">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label>UserName</label>
+                            <div class="field">
+                                <input type="text" name="username" id="username" placeholder="Username">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label>E-mail Address</label>
+                            <div class="field">
+                                <input type="text" name="email" id="email" placeholder="E-mail">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label>Password</label>
+                            <div class="field">
+                                <input type="password" name="password" id="password">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label>Confirm Password</label>
+                            <div class="field">
+                                <input type="password" name="passwordConfirm" id="confirmPassword">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui checkbox">
+                                <input type="checkbox" name="term">
+                                <label>I agree to the <a href="#">Terms and Conditions</a></label>
+                            </div>
+                        </div>
+                        <div class="ui fluid x-large teal submit button" id="signupButton">Submit</div>
+                    </div>
+
+                    <!-- Error message-->
+                    <div class="ui error message"> </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <footer>
+            <div class="ui inverted vertical footer segment">
+                <div class="ui container">
+                    <div class="ui stackable inverted divided equal height stackable grid">
+                        <div class="three wide column">
+                            <h4 class="ui inverted hedaer">Products</h4>
+                            <div class="ui inverted link list">
+                                <a href="#" class="item">Gear</a>
+                                <a href="#" class="item">Clothing</a>
+                                <a href="#" class="item">Footwear</a>
+                                <a href="#" class="item">Packs</a>
+                            </div>
+                        </div>
+                        <div class="three wide column">
+                            <h4 class="ui inverted hedaer">Hiking Trail</h4>
+                            <div class="ui inverted link list">
+                                <a href="#" class="item">Mountaineering</a>
+                                <a href="#" class="item">Climbing</a>
+                                <a href="#" class="item">Hiking</a>
+                                <a href="#" class="item">Camping</a>
+                            </div>
+                        </div>
+                        <div class="three wide column">
+                            <h4 class="ui inverted hedaer">About</h4>
+                            <div class="ui inverted link list">
+                                <a href="#" class="item">About Us</a>
+                                <a href="#" class="item">Contact Us</a>
+                                <a href="#" class="item">FAQ</a>
+                            </div>
+                        </div>
+                        <div class="seven wide column">
+                            <img src="image/DAISU_ICON.png" class="footer-logo-image" alt="logo image">
+                            <h4>Explore more journey with Daisu hiking gears!</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </footer>
+
+        <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+        <script type="http://code.jquery.com/jquery-2.1.1.js"></script>
+        <script src="javascript/menu.js"></script>
+        <script src="semantic/dist/semantic.min.js"></script> 
+        <script src="javascript/signup.js"></script>
+
+    </body>
+</html>
