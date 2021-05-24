@@ -1,0 +1,254 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- 
+   CPSC 362 Software Engineering 
+   Developers: Arun Sangar, Abraham Ludlam, Josh Marvel, TeviSophea Heng, Tony Dao
+   Project Manager / Developer: Phillip Ly
+   
+   Filename:         LogIn.htm (This is the homepage)
+   Supporting files: gpsware.css, gpsware.jpg, order.js, functions.js
+
+-->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <style>
+  .modal-header, h4, .close {
+      background-color: #5cb85c;
+      color:white !important;
+      text-align: center;
+      font-size: 30px;
+  }
+  .modal-footer {
+      background-color: #f9f9f9;
+  }
+  </style>
+   
+</head>
+<body>
+
+<div class="container">
+  <h4>Hike-Ware Members please Log In to see special Christmas month deals!</h4>
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-primary btn-lg" id="myBtn">Login</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="padding:35px 50px;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4><span class="glyphicon glyphicon-lock"></span> Hike-Ware Member Login</h4>
+        </div>
+        <div class="modal-body" style="padding:40px 50px;">
+          <form role="form">
+            <div class="form-group">
+              <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
+              <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+              <input type="text" class="form-control" id="psw" placeholder="Enter password">
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="" checked>Remember me</label>
+            </div>
+              <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Login</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+          <p>Not a member? <a href="#">Sign Up</a></p>
+          <p>Forgot <a href="#">Password?</a></p>
+        </div>
+      </div>
+      
+    </div>
+  </div> 
+</div>
+ 
+<script>
+$(document).ready(function(){
+    $("#myBtn").click(function(){
+        $("#myModal").modal();
+    });
+});
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+   <title>Hike-Ware || Home Page</title>
+   <link href="css/gpsware.css" rel="stylesheet" type="text/css" />
+   
+ 
+<script type ="text/javascript" src="javascript/imlibrary.js"></script>
+
+</head>
+
+<body>
+<form id="LoginForm" method="post" action="form1.htm">
+
+<div id="links">
+      <a href="#" class="newgroup">Home Page</a>
+      <a href="#">Product Catalog</a>
+      <a href="file:///C:/Users/Phillip/Desktop/Daisu/LoginForm.htm">Order Form</a>
+      <a href="#">Maps Online</a>
+      <a href="#">Contact Us</a>
+      <a href="#" class="newgroup">Countries</a>
+      <a href="#">States</a>
+      <a href="#">National Parks</a>
+      <a href="https://www.google.com/search?q=hiking+trails&ie=utf-8&oe=utf-8" target= "Hiking Trails">Hiking Trails</a>
+      <a href="#">Cities</a>
+      <a href="#">Astronomical</a>
+      <a href="#">Natural</a>
+      <a href="#" class="newgroup">GoMap 1.0</a>
+      <a href="#">Drive Planner 2.0</a>
+      <a href="#">Hiker 1.0</a>
+      <a href="#">G-Receiver I</a>
+      <a href="#">G-Receiver II</a>
+      <a href="#">G-Receiver III</a>
+      <a href="#" class="newgroup">Downloads</a>
+      <a href="#">Tech Support</a>
+      <a href="file:///C:/Users/Phillip/Desktop/Daisu/About.html">About Us</a>
+   </div>
+  
+  
+     
+ 
+  <h1 align="center"> 
+Welcome to Hike-Ware!  <p id="formbuttons"> <input type="submit" name="nextb" id="nextb" value="Order" /> </p>
+</h1>      
+   
+      
+
+<div id="footer1">
+      <h2 align="center"><strong>Top Trails: </strong>
+		<ul style="list-style-type:none" align="center">
+		 <a href="" onclick="return(popWin('Sierra.htm'))"><li><strong>Sierra High Route, California</strong></li></a> 
+		 <iframe src="http://www.iorise.com/blog/wp-content/uploads/2013/06/Bear-Lakes-Basin-on-the-Sierra-High-Route-California.jpg" width="500" height="350">></iframe>
+         <a href="" onclick="return(popWin('Crest.htm'))"><li><strong>Pacific Crest Trail, California</strong></li></a> 
+		 <iframe src="http://www.pcta.org/wp-content/uploads/2012/11/Aaron-Doss-Arrowhead-lake.jpg" width="500" height="350"></iframe>
+		 <a href="" onclick="return(popWin('Caribou.htm'))"><li>Caribou Tracks, Gates of the Arctic National Park, Alaska</li></a>
+		 <iframe src="http://hqworld.net/gallery/data/media/154/gates_of_the_arctic_national_park_and_preserve__alaska.jpg" width="500" height="350"></iframe>  		 
+         <a href="" onclick="return(popWin('Araroa.htm'))"><li>Te Araroa Trail, New Zealand</li></a>
+		 <iframe src="http://www.teararoa.org.nz/userfiles/image/People/008_DL_121212_TeAraroa_90MilesBeach_113-Edit.jpg" width="500" height="350"></iframe>  
+		 </ul>
+      </h2>
+	    <p>&nbsp;</p>
+		  <p>&nbsp;</p>
+	  
+</div>
+
+<div style="text-align: center;>
+<h3 align="center" id="dests">Click to see more destinations from our database</h3>
+
+<button type="button" onclick="loadDoc()">Get Destinations</button>
+</div>
+
+<script>
+function loadDoc() {
+      var xhttp = new XMLHttpRequest();
+
+      xhttp.onreadystatechange = function() {
+            if (xhttp.readyState == 4 && xhttp.status == 200) {
+                 document.getElementById("dests").innerHTML = xhttp.responseText;
+            }
+     };
+
+      xhttp.open("GET", "destinations.html", true);
+      xhttp.send();
+}
+</script>
+     
+        	 
+ </form>   
+
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Administrators Log In</h2>
+  <form class="form-horizontal" role="form">
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="email">UserName:</label>
+      <div class="col-sm-10">
+        <input type="email" class="form-control" id="email" placeholder="Enter UserName">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="pwd">Password:</label>
+      <div class="col-sm-10">          
+        <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+      </div>
+    </div>
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <div class="checkbox">
+          <label><input type="checkbox"> Remember me</label>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-default">Submit</button>
+      </div>
+    </div>
+  </form>
+  
+  
+  
+  <p>&nbsp;</p>
+        
+   		<p>&copy;Copyright 2016 &bull; All Rights Reserved </p>
+   		<p>	Website Designed by Mighty Titans </p>
+        
+  
+  
+</div>
+
+</body>
+</html>
+
+
+

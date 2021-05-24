@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Daisu</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">    
+        <link rel="stylesheet" type="text/css" href="css/style.css">  
+    </head>
+
+    <body>
+        <div class="ui segment" id="master-menu"></div>
+
+        <!-- Page Contents-->
+        <div class="ui middle aligned center aligned grid" id="login-container">
+            <div class="column">
+                <h2 class="ui steal image header">
+                    <img src="image/DAISU_ICON.png" class="image" alt="logo image">
+                    <div class="ui inverted content">Login or Create A New Account</div>
+                </h2>
+                <form class="ui large form" method="post" id="login-form">
+                    <div class="ui stacked segment">
+                        <div class="field">
+                            <div class="ui left icon input">
+                                <i class="user icon"></i>
+                                <input type="text" name="username" id="username" placeholder="Username">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui left icon input">
+                                <i class="lock icon"></i>
+                                <input type="password" name="password" id="password" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="ui fluid x-large teal sumbit button" id="loginButton">Login</div>
+                    </div>
+
+                    <!-- Error message-->
+                    <div class="ui error message"></div>
+
+
+                    <div class="g-recaptcha" data-sitekey="6LdH2A0UAAAAAMoCqJT0g_lk0GVDRrDZUnmdBKVI"></div>
+
+                </form>
+                <div class="ui message">
+                    <a href="#">Forget Your Password?</a>
+                    <div class="ui section divider"></div>
+                    <label>New to us? </label>
+                    <a href="signup.html">Sign Up</a>
+                </div>
+            </div>
+        </div> 
+
+        <!-- footer -->
+        <footer>
+            <div class="ui inverted vertical footer segment">
+                <div class="ui container">
+                    <div class="ui stackable inverted divided equal height stackable grid">
+                        <div class="three wide column">
+                            <h4 class="ui inverted hedaer">Products</h4>
+                            <div class="ui inverted link list">
+                                <a href="#" class="item">Gear</a>
+                                <a href="#" class="item">Clothing</a>
+                                <a href="#" class="item">Footwear</a>
+                                <a href="#" class="item">Packs</a>
+                            </div>
+                        </div>
+                        <div class="three wide column">
+                            <h4 class="ui inverted hedaer">Hiking Trail</h4>
+                            <div class="ui inverted link list">
+                                <a href="#" class="item">Mountaineering</a>
+                                <a href="#" class="item">Climbing</a>
+                                <a href="#" class="item">Hiking</a>
+                                <a href="#" class="item">Camping</a>
+                            </div>
+                        </div>
+                        <div class="three wide column">
+                            <h4 class="ui inverted hedaer">About</h4>
+                            <div class="ui inverted link list">
+                                <a href="#" class="item">About Us</a>
+                                <a href="#" class="item">Contact Us</a>
+                                <a href="#" class="item">FAQ</a>
+                            </div>
+                        </div>
+                        <div class="seven wide column">
+                            <img src="image/DAISU_ICON.png" class="footer-logo-image" alt="logo image">
+                            <h4>Explore more journey with Daisu hiking gears!</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </footer>
+
+        <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+        <script src="semantic/dist/semantic.min.js"></script> 
+        <script src="javascript/menu.js"></script>        
+        <script src="javascript/login.js"></script>
+        <script src='https://www.google.com/recaptcha/api.js'></script>
+
+    </body>
+</html>
