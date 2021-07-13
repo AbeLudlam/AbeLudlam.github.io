@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    
+    <!--
+    CPSC 362 Software Engineering
+    Developers: Arun Sangar, Abraham Ludlam, Josh Marvel, TeviSophea Heng, Tony Dao
+    Project Manager / Developer: Phillip Ly
+    -->
+        <title>Daisu</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+        <link rel="stylesheet" href="jquery-bar-rating/dist/themes/fontawesome-stars-o.css">
+        <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">  
+    </head>
+
+    <body>
+        <!-- Following menu-->
+        <div class="ui segment" id="master-menu"></div>
+
+        <!-- Page Contents-->
+        <div class="ui segment" id="thumbnail">
+            <div class="ui grid">
+                <div class="three wide column">
+                    <div class="ui vertical fluid accordion menu">
+                        <div class="item camping">
+                            <a class="title">
+                                <i class="dropdown icon"></i>
+                                Camping
+                            </a>
+                            <div class="content">
+                                <a href="thumbnail2#/camping/tents" class="item" data-tab="camping/tents">Tents</a>
+                                <a href="thumbnail2#/camping/sleeping-bags" class="item" data-tab="camping/sleeping-bags">Sleeping Bags</a>
+                                <a href="thumbnail2#/camping/hammocks" class="item" data-tab="camping/hammocks">Hammocks</a>
+                                <a href="thumbnail2#/camping/pads" class="item" data-tab="camping/pads">Pads</a>
+                                <a href="thumbnail2#/camping/cook-wares" class="item" data-tab="camping/cook-wares">Cook Wares</a>
+                                <a href="thumbnail2#/camping/stoves" class="item" data-tab="camping/stoves">Stoves</a>
+                                <a href="thumbnail2#/camping/coolers" class="item" data-tab="camping/coolers">Coolers</a>
+                            </div>
+                        </div>
+                        <div class="item accessories">
+                            <a class="title">
+                                <i class="dropdown icon"></i>
+                                Accessories
+                            </a>
+                            <div class="content">
+                                <div class="grouped fields">
+                                    <a href="thumbnail2#/accessories/binoculars" class="item" data-tab="accessories/binoculars">Binoculars</a>
+                                    <a href="thumbnail2#/accessories/compasses" class="item" data-tab="accessories/compasses">Compasses</a>
+                                    <a href="thumbnail2#/accessories/solar-and-portable-power" class="item" data-tab="accessories/solar-and-portable-power">Solar and Portable Power</a>
+                                    <a href="thumbnail2#/accessories/GPS" class="item" data-tab="accessories/GPS">GPS</a>
+                                    <a href="thumbnail2#/accessories/gear-storage-and-maintenance" class="item" data-tab="accessories/gear-storage-and-maintenance">Gear Storage & Maintenance</a>
+                                    <a href="thumbnail2#/accessories/lightings" class="item" data-tab="accessories/lightings">Lightings</a>
+                                    <a href="thumbnail2#/accessories/trekking-poles" class="item" data-tab="accessories/trekking-poles">Trekking Poles</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item health-and-safety">
+                            <a class="title">
+                                <i class="dropdown icon"></i>
+                                Health & Safety
+                            </a>
+                            <div class="content">
+                                <a href="thumbnail2#/health-and-safety/first-aid" class="item" data-tab="health-and-safety/first-aid">First Aid</a>
+                                <a href="thumbnail2#/health-and-safety/emergency-and-survival" class="item" data-tab="health-and-safety/emergency-and-survival">Emergency & Survival</a>
+                                <a href="thumbnail2#/health-and-safety/sun-and-bug-protections" class="item" data-tab="health-and-safety/sun-and-bug-protections">Sun & Bug Protections</a>
+                            </div>
+                        </div>
+                        <div class="item men">
+                            <a class="title">
+                                <i class="dropdown icon"></i>
+                                Men
+                            </a>
+                            <div class="content">
+                                <a href="thumbnail2#/men/footwear" class="item" data-tab="men/footwear">Footwear</a>
+                                <a href="thumbnail2#/men/jackets" class="item" data-tab="men/jackets">Jackets</a>
+                                <a href="thumbnail2#/men/tops" class="item" data-tab="men/tops">Tops</a>
+                                <a href="thumbnail2#/men/bottoms" class="item" data-tab="men/bottoms">Bottoms</a>
+                            </div>
+                        </div>
+                        <div class="item women">
+                            <a class="title">
+                                <i class="dropdown icon"></i>
+                                Women
+                            </a>
+                            <div class="content">
+                                <a href="thumbnail2#/women/footwear" class="item" data-tab="women/footwear">Footwear</a>
+                                <a href="thumbnail2#/women/jackets" class="item" data-tab="women/jackets">Jackets</a>
+                                <a href="thumbnail2#/women/tops" class="item" data-tab="women/tops">Tops</a>
+                                <a href="thumbnail2#/women/bottoms" class="item" data-tab="women/bottoms">Bottoms</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="thirteen wide stretched column" >
+                    <div class="ui segment">
+                        <div data-bind="visible: searchSegment">
+                            <h1 class="ui header">Search Result</h1>
+                            <p>There are <span data-bind="text: searchResultNumber"></span> products that match your search for '<span data-bind="text: searchInput"></span>'.</p>
+                            <div class="ui divider"></div>
+                        </div>
+                        <div data-bind="template: { name: 'items-list'}" > </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- footer -->
+        <footer>
+            <div class="ui inverted vertical footer segment">
+                <div class="ui container">
+                    <div class="ui stackable inverted divided equal height stackable grid">
+                        <div class="three wide column">
+                            <h4 class="ui inverted hedaer">Products</h4>
+                            <div class="ui inverted link list">
+                                <a href="#" class="item">Gear</a>
+                                <a href="#" class="item">Clothing</a>
+                                <a href="#" class="item">Footwear</a>
+                                <a href="#" class="item">Packs</a>
+                            </div>
+                        </div>
+                        <div class="three wide column">
+                            <h4 class="ui inverted hedaer">Hiking Trail</h4>
+                            <div class="ui inverted link list">
+                                <a href="#" class="item">Mountaineering</a>
+                                <a href="#" class="item">Climbing</a>
+                                <a href="#" class="item">Hiking</a>
+                                <a href="#" class="item">Camping</a>
+                            </div>
+                        </div>
+                        <div class="three wide column">
+                            <h4 class="ui inverted hedaer">About</h4>
+                            <div class="ui inverted link list">
+                                <a href="#" class="item">About Us</a>
+                                <a href="#" class="item">Contact Us</a>
+                                <a href="#" class="item">FAQ</a>
+                            </div>
+                        </div>
+                        <div class="seven wide column">
+                            <img src="image/DAISU_ICON.png" class="footer-logo-image" alt="logo image">
+                            <h4>Explore more journey with Daisu hiking gears!</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </footer>
+
+        
+
+        <script type='text/javascript' src='javascript/knockout-3.4.1.js'></script>
+
+        <script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="semantic/dist/semantic.min.js"></script>
+        <script src="jquery-bar-rating/dist/jquery.barrating.min.js"></script>
+        <script src="javascript/address.js"></script>
+        <script src="javascript/menu.js"></script>
+        <script src="javascript/thumbnail.js"></script>
+    </body>
+</html>
