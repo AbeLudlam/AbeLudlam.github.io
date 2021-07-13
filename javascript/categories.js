@@ -179,7 +179,7 @@ var main = function() {
                                 '<div class="ui large image">' +
                                     '<div class="ui dimmer">' +
                                         '<div class="content">' +
-                                            '<a href="thumbnail#/' + targetTab + '/' + category[i]["data-tab"]+ '" class="center">' +
+                                            '<a href="thumbnail2#/' + targetTab + '/' + category[i]["data-tab"]+ '" class="center">' +
                                                 '<h2 class="ui inverted header">'+ category[i]["title"] +'</h2>' +
                                             '</a>' +
                                         '</div>' +
