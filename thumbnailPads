@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    
+    <!--
+    CPSC 362 Software Engineering
+    Developers: Arun Sangar, Abraham Ludlam, Josh Marvel, TeviSophea Heng, Tony Dao
+    Project Manager / Developer: Phillip Ly
+    -->
+        <title>Daisu</title>
+        <meta charset="UTF-8">
+        
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css"> 
+        <style>
+.checked {
+  color: orange;
+}
+</style>
+    </head>
+    
+    <body>
+        <!-- Following menu-->
+        <div class="ui segment" id="master-menu"></div>
+
+        <!-- Page Contents-->
+        <div class="ui segment" id="thumbnail">
+            <div class="ui grid">
+                <div class="three wide column">
+                    <div class="ui vertical fluid accordion menu">
+                        <div class="item camping">
+                            <a class="title">
+                                <i class="dropdown icon"></i>
+                                Camping
+                            </a>
+                            <div class="content">
+                                <a href="thumbnail2#/camping/tents" class="item" data-tab="camping/tents">Tents</a>
+                                <a href="thumbnail2#/camping/sleeping-bags" class="item" data-tab="camping/sleeping-bags">Sleeping Bags</a>
+                                <a href="thumbnail2#/camping/hammocks" class="item" data-tab="camping/hammocks">Hammocks</a>
+                                <a href="thumbnail2#/camping/pads" class="item" data-tab="camping/pads">Pads</a>
+                                <a href="thumbnail2#/camping/cook-wares" class="item" data-tab="camping/cook-wares">Cook Wares</a>
+                                <a href="thumbnail2#/camping/stoves" class="item" data-tab="camping/stoves">Stoves</a>
+                                <a href="thumbnail2#/camping/coolers" class="item" data-tab="camping/coolers">Coolers</a>
+                            </div>
+                        </div>
+                        <div class="item accessories">
+                            <a class="title">
+                                <i class="dropdown icon"></i>
+                                Accessories
+                            </a>
+                            <div class="content">
+                                <div class="grouped fields">
+                                    <a href="thumbnail2#/accessories/binoculars" class="item" data-tab="accessories/binoculars">Binoculars</a>
+                                    <a href="thumbnail2#/accessories/compasses" class="item" data-tab="accessories/compasses">Compasses</a>
+                                    <a href="thumbnail2#/accessories/solar-and-portable-power" class="item" data-tab="accessories/solar-and-portable-power">Solar and Portable Power</a>
+                                    <a href="thumbnail2#/accessories/GPS" class="item" data-tab="accessories/GPS">GPS</a>
+                                    <a href="thumbnail2#/accessories/gear-storage-and-maintenance" class="item" data-tab="accessories/gear-storage-and-maintenance">Gear Storage & Maintenance</a>
+                                    <a href="thumbnail2#/accessories/lightings" class="item" data-tab="accessories/lightings">Lightings</a>
+                                    <a href="thumbnail2#/accessories/trekking-poles" class="item" data-tab="accessories/trekking-poles">Trekking Poles</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item health-and-safety">
+                            <a class="title">
+                                <i class="dropdown icon"></i>
+                                Health & Safety
+                            </a>
+                            <div class="content">
+                                <a href="thumbnail2#/health-and-safety/first-aid" class="item" data-tab="health-and-safety/first-aid">First Aid</a>
+                                <a href="thumbnail2#/health-and-safety/emergency-and-survival" class="item" data-tab="health-and-safety/emergency-and-survival">Emergency & Survival</a>
+                                <a href="thumbnail2#/health-and-safety/sun-and-bug-protections" class="item" data-tab="health-and-safety/sun-and-bug-protections">Sun & Bug Protections</a>
+                            </div>
+                        </div>
+                        <div class="item men">
+                            <a class="title">
+                                <i class="dropdown icon"></i>
+                                Men
+                            </a>
+                            <div class="content">
+                                <a href="thumbnail2#/men/footwear" class="item" data-tab="men/footwear">Footwear</a>
+                                <a href="thumbnail2#/men/jackets" class="item" data-tab="men/jackets">Jackets</a>
+                                <a href="thumbnail2#/men/tops" class="item" data-tab="men/tops">Tops</a>
+                                <a href="thumbnail2#/men/bottoms" class="item" data-tab="men/bottoms">Bottoms</a>
+                            </div>
+                        </div>
+                        <div class="item women">
+                            <a class="title">
+                                <i class="dropdown icon"></i>
+                                Women
+                            </a>
+                            <div class="content">
+                                <a href="thumbnail2#/women/footwear" class="item" data-tab="women/footwear">Footwear</a>
+                                <a href="thumbnail2#/women/jackets" class="item" data-tab="women/jackets">Jackets</a>
+                                <a href="thumbnail2#/women/tops" class="item" data-tab="women/tops">Tops</a>
+                                <a href="thumbnail2#/women/bottoms" class="item" data-tab="women/bottoms">Bottoms</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="thirteen wide stretched column" >
+                    <div class="ui divided items">
+                <div class="item">
+                    <a href="#" class="ui small image">
+                        <img class="ui image" src="https://www.rei.com/media/product/870757?size=230">
+                    </a>
+                    <div class="content">
+                        <a href="#" class="header">REI Camp Bed 3.5 Self-Inflating Sleeping Pad</a>
+                        <div class="description">
+                            <div class="sub-description">
+                                <h3 class="price">
+                                    $<span>119.00</span>
+                                </h3>
+                                <div class="rating">
+                                    <div class="half-star-rating">
+                                        <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ui right floated sub-description">
+                                <div class="quantity">
+                                    <p id="quantity-label">Qty</p>
+                                   <select id="menu" name="qty">
+                                            
+                                            <option class="item" data-value="1" >1</option>
+                                            <option class="item" data-value="2" >2</option>
+                                            <option class="item" data-value="3" >3</option>
+                                            <option class="item" data-value="4" >4</option>
+                                            <option class="item" data-value="5" >5</option>
+                                        </select>
+                                </div>
+                                <button id="addToCartButton" class="ui button" data-bind="click: $root.addToCartButton">Add to Cart</button>
+
+                            </div>
+                        </div>
+                    </div>
+                        </div>
+                    <div class="item">
+                    <a href="#" class="ui small image">
+                        <img class="ui image" src="https://www.rei.com/media/product/881907?size=230">
+                    </a>
+                    <div class="content">
+                        <a href="#" class="header"> Exped SIM MegaMat Duo Sleeping Pad</a>
+                        <div class="description">
+                            <div class="sub-description">
+                                <h3 class="price">
+                                    $<span>349.00</span>
+                                </h3>
+                                <div class="rating">
+                                    <div class="half-star-rating">
+                                        <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ui right floated sub-description">
+                                <div class="quantity">
+                                    <p id="quantity-label">Qty</p>
+                                   <select id="menu" name="qty">
+                                            
+                                            <option class="item" data-value="1" >1</option>
+                                            <option class="item" data-value="2" >2</option>
+                                            <option class="item" data-value="3" >3</option>
+                                            <option class="item" data-value="4" >4</option>
+                                            <option class="item" data-value="5" >5</option>
+                                        </select>
+                                </div>
+                                <button id="addToCartButton" class="ui button" data-bind="click: $root.addToCartButton">Add to Cart</button>
+
+                            </div>
+                        </div>
+                        
+                     </div>
+                        </div>
+                        <div class="item">
+                    <a href="#" class="ui small image">
+                        <img class="ui image" src="https://www.rei.com/media/product/881574?size=230">
+                    </a>
+                    <div class="content">
+                        <a href="#" class="header">Therm-a-Rest NeoAir XLite Sleeping Pad</a>
+                        <div class="description">
+                            <div class="sub-description">
+                                <h3 class="price">
+                                    $<span>129.00</span>
+                                </h3>
+                                <div class="rating">
+                                    <div class="half-star-rating">
+                                        <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star "></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ui right floated sub-description">
+                                <div class="quantity">
+                                    <p id="quantity-label">Qty</p>
+                                    <select id="menu" name="qty">
+                                            
+                                            <option class="item" data-value="1" >1</option>
+                                            <option class="item" data-value="2" >2</option>
+                                            <option class="item" data-value="3" >3</option>
+                                            <option class="item" data-value="4" >4</option>
+                                            <option class="item" data-value="5" >5</option>
+                                        </select>
+                                </div>
+                                <button id="addToCartButton" class="ui button" data-bind="click: $root.addToCartButton">Add to Cart</button>
+
+                            </div>
+                        </div>
+                        </div>
+                        </div>
+                        <div class="item">
+                    <a href="#" class="ui small image">
+                        <img class="ui image" src="https://www.rei.com/media/product/866835?size=230">
+                    </a>
+                    <div class="content">
+                        <a href="#" class="header"> Klymit Insulated Static V Sleeping Pad</a>
+                        <div class="description">
+                            <div class="sub-description">
+                                <h3 class="price">
+                                    $<span>84.00</span>
+                                </h3>
+                                <div class="rating">
+                                    <div class="half-star-rating">
+                                        <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ui right floated sub-description">
+                                <div class="quantity">
+                                    <p id="quantity-label">Qty</p>
+                                    <select id="menu" name="qty">
+                                            
+                                            <option class="item" data-value="1" >1</option>
+                                            <option class="item" data-value="2" >2</option>
+                                            <option class="item" data-value="3" >3</option>
+                                            <option class="item" data-value="4" >4</option>
+                                            <option class="item" data-value="5" >5</option>
+                                        </select>
+                                </div>
+                                <button id="addToCartButton" class="ui button" data-bind="click: $root.addToCartButton">Add to Cart</button>
+
+                            </div>
+                        </div>
+               </div>
+                        </div>
+                        <div class="item">
+                    <a href="#" class="ui small image">
+                        <img class="ui image" src="https://www.rei.com/media/product/897538?size=230">
+                    </a>
+                    <div class="content">
+                        <a href="#" class="header"> ALPS Mountaineering Lightweight Air Pad</a>
+                        <div class="description">
+                            <div class="sub-description">
+                                <h3 class="price">
+                                    $<span>90.00</span>
+                                </h3>
+                                <div class="rating">
+                                     <div class="half-star-rating">
+                                        
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+                                
+                                </div>
+                                </div>
+                                 </div>
+                            <div class="ui right floated sub-description">
+                                <div class="quantity">
+                                    <p id="quantity-label">Qty</p>
+                                    
+                                        <select id="menu" name="qty">
+                                            
+                                            <option class="item" data-value="1" >1</option>
+                                            <option class="item" data-value="2" >2</option>
+                                            <option class="item" data-value="3" >3</option>
+                                            <option class="item" data-value="4" >4</option>
+                                            <option class="item" data-value="5" >5</option>
+                                        </select>
+                                    </div>
+                                
+                                 <button id="addToCartButton" class="ui button" data-bind="click: $root.addToCartButton">Add to Cart</button>
+                                 </div>
+                                 
+                            </div>
+                        </div>
+            </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <footer>
+            <div class="ui inverted vertical footer segment">
+                <div class="ui container">
+                    <div class="ui stackable inverted divided equal height stackable grid">
+                        <div class="three wide column">
+                            <h4 class="ui inverted hedaer">Products</h4>
+                            <div class="ui inverted link list">
+                                <a href="#" class="item">Gear</a>
+                                <a href="#" class="item">Clothing</a>
+                                <a href="#" class="item">Footwear</a>
+                                <a href="#" class="item">Packs</a>
+                            </div>
+                        </div>
+                        <div class="three wide column">
+                            <h4 class="ui inverted hedaer">Hiking Trail</h4>
+                            <div class="ui inverted link list">
+                                <a href="#" class="item">Mountaineering</a>
+                                <a href="#" class="item">Climbing</a>
+                                <a href="#" class="item">Hiking</a>
+                                <a href="#" class="item">Camping</a>
+                            </div>
+                        </div>
+                        <div class="three wide column">
+                            <h4 class="ui inverted hedaer">About</h4>
+                            <div class="ui inverted link list">
+                                <a href="#" class="item">About Us</a>
+                                <a href="#" class="item">Contact Us</a>
+                                <a href="#" class="item">FAQ</a>
+                            </div>
+                        </div>
+                        <div class="seven wide column">
+                            <img src="image/DAISU_ICON.png" class="footer-logo-image" alt="logo image">
+                            <h4>Explore more journey with Daisu hiking gears!</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </footer>
+        <script type='text/javascript' src='javascript/knockout-3.4.1.js'>$(function() {
+      $('#example').barrating({
+        theme: 'fontawesome-stars'
+      });
+   });</script>
+
+        <script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="jquery-bar-rating/dist/jquery.barrating.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="semantic/dist/semantic.min.js"></script>
+        
+        <script src="javascript/address.js"></script>
+        <script src="javascript/menu.js"></script>
+        <script src="javascript/thumbnail.js"></script>
+        
+
+        
+    </body>
+</html>
