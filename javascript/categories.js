@@ -5,37 +5,37 @@ var main = function() {
         "camping" : [
             {
                 "title": "Tents",
-                "data-tab": "tents",
+                "data-tab": "Tents",
                 "url":  "https://www.rei.com/media/product/862430?size=500"
             }, 
             {
                 "title": "Sleeping Bags",
-                "data-tab": "sleeping-bags",
+                "data-tab": "Bags",
                 "url": "https://www.rei.com/media/product/897547?size=230"
             },
             {
                 "title": "Hammocks",
-                "data-tab": "hammocks",
+                "data-tab": "Hammocks",
                 "url": "https://www.rei.com/media/product/895878?size=400"
             },
             {
                 "title": "Pads",
-                "data-tab": "pads",
+                "data-tab": "Pads",
                 "url": "https://www.rei.com/media/product/881907?size=500"
             },
             {
                 "title": "Cook Wares",
-                "data-tab": "cook-wares",
+                "data-tab": "Cookwares",
                 "url": "https://www.rei.com/media/product/830777?size=230"
             },
             {
                 "title": "Stoves",
-                "data-tab": "stoves",
+                "data-tab": "Stoves",
                 "url": "https://www.rei.com/media/product/868190?size=230"
             },
             {
                 "title": "Coolers",
-                "data-tab": "coolers",
+                "data-tab": "Coolers",
                 "url": "https://www.rei.com/media/product/112628?size=230"
             }
         ],
@@ -179,7 +179,7 @@ var main = function() {
                                 '<div class="ui large image">' +
                                     '<div class="ui dimmer">' +
                                         '<div class="content">' +
-                                            '<a href="thumbnail2#/' + targetTab + '/' + category[i]["data-tab"]+ '" class="center">' +
+                                            '<a href="thumbnail' + category[i]["data-tab"]+ '" class="center">' +
                                                 '<h2 class="ui inverted header">'+ category[i]["title"] +'</h2>' +
                                             '</a>' +
                                         '</div>' +
