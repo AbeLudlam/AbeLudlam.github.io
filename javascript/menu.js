@@ -40,8 +40,96 @@ var main = function () {
                 var query = searchInput.split(' ').join('+');
 
                 //go to search page with url query
-                window.location = 'thumbnail#/search=' + query;                
-
+                //window.location = 'thumbnail#/search=' + query;                
+                switch(query){
+                    case 'Tents':
+                        window.location = 'thumbnailTents';
+                        break;
+                    case 'tents':
+                        window.location = 'thumbnailTents';
+                        break;
+                    case 'Tent':
+                        window.location = 'thumbnailTents';
+                        break;
+                    case 'tent':
+                        window.location = 'thumbnailTents';
+                        break;
+                    case 'Hammocks':
+                        window.location = 'thumbnailHammocks';
+                        break;
+                    case 'hammocks':
+                        window.location = 'thumbnailHammocks';
+                        break;
+                    case 'Hammock':
+                        window.location = 'thumbnailHammocks';
+                        break;
+                    case 'hammock':
+                        window.location = 'thumbnailHammocks';
+                        break;
+                    case 'Pads':
+                        window.location = 'thumbnailPads';
+                        break;
+                    case 'pads':
+                        window.location = 'thumbnailPads';
+                        break;
+                    case 'Pad':
+                        window.location = 'thumbnailPads';
+                        break;
+                    case 'pad':
+                        window.location = 'thumbnailPads';
+                        break;
+                    case 'Bags':
+                        window.location = 'thumbnailBags';
+                        break;
+                    case 'bags':
+                        window.location = 'thumbnailBags';
+                        break;
+                     case 'Bag':
+                        window.location = 'thumbnailBags';
+                        break;
+                    case 'bag':
+                        window.location = 'thumbnailBags';
+                        break;
+                    case 'Coolers':
+                        window.location = 'thumbnailCoolers';
+                        break;
+                    case 'coolers':
+                        window.location = 'thumbnailCoolers';
+                        break;
+                    case 'Cooler':
+                        window.location = 'thumbnailCoolers';
+                        break;
+                    case 'cooler':
+                        window.location = 'thumbnailCoolers';
+                        break;
+                    case 'Stoves':
+                        window.location = 'thumbnailStoves';
+                        break;
+                    case 'stoves':
+                        window.location = 'thumbnailStoves';
+                        break;
+                    case 'Stove':
+                        window.location = 'thumbnailStoves';
+                        break;
+                    case 'stove':
+                        window.location = 'thumbnailStoves';
+                        break;
+                    case 'Cookwares':
+                        window.location = 'thumbnailCookwares';
+                        break;
+                    case 'cookwares':
+                        window.location = 'thumbnailCookwares';
+                        break;
+                    case 'Cookware':
+                        window.location = 'thumbnailCookwares';
+                        break;
+                    case 'cookware':
+                        window.location = 'thumbnailCookwares';
+                        break;
+                    default:
+                        window.location = 'thumbnail#/search=' + query;  
+                }
+                    
                 //reload page if location at thumbnail
                 if(path === 'thumbnail') {
                     window.location.reload();
