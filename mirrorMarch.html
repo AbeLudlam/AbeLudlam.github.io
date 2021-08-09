@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to display a random number.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  //document.getElementById("demo").innerHTML = Math.random();
+  ran = Math.random();
+  count = 0;
+  stop = 0;
+  while( stop == 0){
+    
+    if(ran >= 0.5){
+      count = count + 1;
+    }
+    else {
+      stop = stop + 1;
+    }
+  }   
+  document.getElementById("demo").innerHTML = count;
+}
+</script>
+
+</body>
+</html>
