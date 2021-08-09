@@ -25,7 +25,7 @@ p {
 </style>
 </head>
 <body>
-
+<h style="color:white;" id="attempts">Attempt:</h>
 
 <p style="color:white;" id="demo"></p>
 <button class = "block" onclick="myFunction()">Flip some coins</button>
@@ -34,6 +34,7 @@ p {
 
 
 <script>
+runs = 0;
 function myFunction() {
   //document.getElementById("demo").innerHTML = Math.random();
   ran = Math.random();
@@ -49,7 +50,9 @@ function myFunction() {
       stop = stop + 1;
     }
   }   
+runs = runs + 1;
   document.getElementById("demo").innerHTML = count;
+  document.getElementById("attempts").innerHTML = runs;
 }
   
 </script>
