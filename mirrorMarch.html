@@ -8,6 +8,10 @@
 
 <p id="demo"></p>
 
+<button onclick="myFunction2()">Flip some coins</button>
+
+<p id="demo2"></p>
+<p id="demo3"></p>
 <script>
 function myFunction() {
   //document.getElementById("demo").innerHTML = Math.random();
@@ -25,6 +29,27 @@ function myFunction() {
     }
   }   
   document.getElementById("demo").innerHTML = count;
+}
+  function myFunction2() {
+  //document.getElementById("demo").innerHTML = Math.random();
+  ran = Math.random();
+  count = 0;
+  count2 = 0;
+  stop = 0;
+  while( stop < 10000){
+    
+    if(ran >= 0.5){
+      count = count + 1
+      ran = Math.random();
+    }
+    else {
+      count2 = count2 + 1;
+      ran = Math.random();
+    }
+    stop = stop + 1;
+  }   
+  document.getElementById("demo2").innerHTML = count;
+  document.getElementById("demo3").innerHTML = count2;
 }
 </script>
 </div>
