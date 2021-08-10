@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    
+    <!--
+    CPSC 362 Software Engineering
+    Developers: Arun Sangar, Abraham Ludlam, Josh Marvel, TeviSophea Heng, Tony Dao
+    Project Manager / Developer: Phillip Ly
+    -->
+        <title>Daisu</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+        <link rel="stylesheet" href="jquery-bar-rating/dist/themes/fontawesome-stars-o.css">
+        <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">  
+    </head>
+
+    <body>
+        <!-- Following menu-->
+        <div class="ui segment" id="master-menu"></div>
+
+        <div class="ui segment">
+            <div id="column-product">                
+                <div class="ui grid">
+                    <div class="six wide column">
+                        <img class="ui fluid image" src="https://www.rei.com/media/product/754781?size=500" id="image"></img>
+                    </div>
+                    <div class="seven wide column">
+                        <h1 class="ui header"><span id="title">ENO Guardian Bug Net</span></h1>
+                        <div class="ui divider"></div>
+                        <h3 class="ui header">Price: <span id="price" class="price">$59.95</span></h3>
+                        <h3 class="ui header">Color: <span id="color">White</span></h3>
+                        <p>Only <span id="qty">3</span> In Stock</p>
+                        <ul class="ui list" id="description">
+                            <li>Spacious dome design offers great livability\r\nMesh door, ceiling and side panels increase ventilation to help reduce condensation buildup </li>
+                            <li>large doors provide easy access; roomy vestibules protect entrances and store your gear out of the rain </li>
+                            <li>Front dual-zipper vestibule door lets you create a covered portico when coupled with trekking poles (sold separately)  </li>
+                            <li>Combination pole sleeve and clip system combines advantages of both designs, and allows swift, freestanding setup even in the wind; DAC DA17 poles are strong and reliable</li>
+                            <li>UV-resistant, seam-taped polyester rainfly provides full coverage and doesn\'t stretch or expand when wet, ensuring a consistently taut pitch </li>
+                            
+                        </ul>
+                    </div>
+                    <div class="three wide column">
+                        <div class="ui segment">
+                            <div class="ui center aligned grid quantity-container">
+                                <p id="quantity-label">Qty: </p>
+                                <div class="ui selection dropdown" id="quantity-dropdown">
+                                    <i class="dropdown icon"></i>
+                                    <div class="text">1</div>
+                                    <div class="menu">
+                                        <div class="item active selected" data-value="1">1</div>
+                                        <div class="item" data-value="2">2</div>
+                                        <div class="item" data-value="3">3</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <button class="ui fluid labeled icon button" id="addToCartButton">
+                                <i class="shop icon"></i>
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>     
+        </div>
+       <div class="ui segment" id="thumbnail"> 
+        <div class="ui center aligned grid container">
+            <div class="ui comments">
+                <h3 class="ui dividing header">Comments</h3>
+                <div class="comment">
+                    <a class="avatar">
+                        <img src="image/matt.jpg">
+                    </a>
+                <div class="content">
+                    <a class="author">Matt Cool</a>
+                    <div class="metadata">
+                        <span class="date">Today at 5:42PM</span>
+                    </div>
+                    <div class="text">
+                        This product was very useful during my hike on mountain Everest!
+                    </div>
+                    <div class="actions">
+                        <a class="reply">Reply</a>
+                    </div>
+                </div>
+            </div>
+                <div class="comment">
+                    <a class="avatar">
+                    <img src="image/elliot.jpg">
+                    </a>
+                    <div class="content">
+                        <a class="author">Elliot Ine</a>
+                        <div class="metadata">
+                            <span class="date">Yesterday at 12:30AM</span>
+                        </div>
+                        <div class="text">
+                            <p>This has been very useful for my hiking trip to on Te Araroa!</p>
+                        </div>
+                        <div class="actions">
+                            <a class="reply">Reply</a>
+                        </div>
+                    </div>
+                <div class="comments">
+                    <div class="comment">
+                        <a class="avatar">
+                            <img src="image/jenny.jpg">
+                        </a>
+                        <div class="content">
+                            <a class="author">Tiffany Rae</a>
+                            <div class="metadata">
+                                <span class="date">Just now</span>
+                            </div>
+                            <div class="text">
+                                Elliot you are always so right :)
+                            </div>
+                        <div class="actions">
+                            <a class="reply">Reply</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="comment">
+                <a class="avatar">
+                    <img src="image/joe.jpg">
+                </a>
+                <div class="content">
+                    <a class="author">Joe Henderson</a>
+                <div class="metadata">
+                    <span class="date">5 days ago</span>
+                </div>
+                <div class="text">
+                    Dude, this is awesome. Five stars rating!
+                </div>
+                <div class="actions">
+                    <a class="reply">Reply</a>
+                </div>
+            </div>
+        </div>
+        <form class="ui reply form">
+            <div class="field">
+                <textarea></textarea>
+            </div>
+            <div class="ui blue labeled submit icon button">
+                <i class="icon edit"></i> Add Reply
+            </div>
+        </form>
+     </div>
+    </div>
+   </div>
+
+        <!-- footer -->
+        <footer>
+            <div class="ui inverted vertical footer segment">
+                <div class="ui container">
+                    <div class="ui stackable inverted divided equal height stackable grid">
+                        <div class="three wide column">
+                            <h4 class="ui inverted hedaer">Products</h4>
+                            <div class="ui inverted link list">
+                                <a href="#" class="item">Gear</a>
+                                <a href="#" class="item">Clothing</a>
+                                <a href="#" class="item">Footwear</a>
+                                <a href="#" class="item">Packs</a>
+                            </div>
+                        </div>
+                        <div class="three wide column">
+                            <h4 class="ui inverted hedaer">Hiking Trail</h4>
+                            <div class="ui inverted link list">
+                                <a href="#" class="item">Mountaineering</a>
+                                <a href="#" class="item">Climbing</a>
+                                <a href="#" class="item">Hiking</a>
+                                <a href="#" class="item">Camping</a>
+                            </div>
+                        </div>
+                        <div class="three wide column">
+                            <h4 class="ui inverted hedaer">About</h4>
+                            <div class="ui inverted link list">
+                                <a href="#" class="item">About Us</a>
+                                <a href="#" class="item">Contact Us</a>
+                                <a href="#" class="item">FAQ</a>
+                            </div>
+                        </div>
+                        <div class="seven wide column">
+                            <img src="image/DAISU_ICON.png" class="footer-logo-image" alt="logo image">
+                            <h4>Explore more journey with Daisu hiking gears!</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="semantic/dist/semantic.min.js"></script>
+        <script src="jquery-bar-rating/dist/jquery.barrating.min.js"></script>
+        <script src="javascript/address.js"></script>
+        <script src="javascript/menu.js"></script>
+        <script src="javascript/product.js"></script>
+    </body>
+</html>
