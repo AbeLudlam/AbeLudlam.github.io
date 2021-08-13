@@ -78,7 +78,7 @@ var main = function() {
         ],
         "health-and-safety" : [
             {
-                "title": "Frist Aid",
+                "title": "First Aid",
                 "data-tab": "first-aid",
                 "url":  "https://www.rei.com/media/product/784609?size=230"
             }, 
